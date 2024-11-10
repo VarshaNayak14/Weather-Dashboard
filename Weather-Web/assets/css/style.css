@@ -1,0 +1,115 @@
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif; 
+        }
+        
+        body {
+            display: flex;
+            align-items: center;    
+            justify-content: center;
+            height: 100vh;
+            background: url("../img/background.jpeg") no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 400px;
+            min-height: 300px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(40px);
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        img {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+        
+        .input-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        input {
+            padding: 11px;
+            width: 70%;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 500px;
+            color: white;
+            font-size: 18px;
+        }
+        input:hover {
+            background-color: black;
+        }
+        ::placeholder{
+            color: ghostwhite;
+            font-size: 19px;
+        }
+        
+        .search-icon {
+            width: 50px;
+            height: 100px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            border: none;
+            clip-path: circle();
+            cursor: pointer;
+            font-size: 20px;
+            margin-left: 10px;
+        }
+
+        .search-icon:hover {
+            background-color: black;
+
+        }
+        
+        #weather-info {
+            margin-top: 20px;
+            display: none;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        
+        #error-message {
+            color: white;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        p {
+            line-height: 1;
+            font-weight: 700;
+            margin: 20px 0 6px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    
